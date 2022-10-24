@@ -1,0 +1,56 @@
+@import 'src/view/components/App/colors';
+@import 'src/view/components/App/constants';
+
+.filter {
+  align-self: flex-start;
+  width: 17em;
+  padding: 2em 1.5em;
+  background-color: $white;
+  box-shadow: $shadow;
+  border-radius: 10px;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.clear {
+  cursor: pointer;
+  font-size: 0.875em;
+  line-height: 1.35em;
+  color: $primary-yellow;
+  border: none;
+  background-color: transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.option:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.subtitle {
+  font-weight: 600;
+  line-height: 1.25em;
+  margin-bottom: 1em;
+}
+
+.search {
+  margin-top: 1em;
+}

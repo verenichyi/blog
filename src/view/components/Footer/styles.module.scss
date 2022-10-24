@@ -1,0 +1,23 @@
+@import 'src/view/components/App/colors';
+
+.footer {
+  background-color: $main;
+  padding: 2em 0;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+.title, .description {
+  color: $primary-yellow;
+}

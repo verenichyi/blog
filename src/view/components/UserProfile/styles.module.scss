@@ -1,0 +1,29 @@
+@import 'src/view/components/App/constants';
+@import 'src/view/components/App/colors';
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+
+  img {
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
+.link {
+  color: $main;
+  transition: all 0.2s ease;
+  line-height: 1.375em;
+
+  &:hover {
+    color: $primary-yellow;
+  }
+}

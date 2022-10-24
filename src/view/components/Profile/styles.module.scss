@@ -1,0 +1,95 @@
+@import 'src/view/components/App/constants';
+@import 'src/view/components/App/colors';
+
+.profile {
+  width: 720px;
+  padding: 4.5em 3.5em;
+  border-radius: 10px;
+  box-shadow: $shadow;
+  background-color: $white;
+
+  @media screen and (max-width: 768px) {
+    width: 432px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 272px;
+    padding: 3.5em 2.5em;
+  }
+}
+
+.profileDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.5em;
+}
+
+.userPhoto {
+  flex: 0 0 40%;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.userInfo {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2em;
+  font-family: 'Montserrat', sans-serif;
+
+  //@media screen and (max-width: 768px) {
+  //  width: 65%;
+  //}
+  //
+  //@media screen and (max-width: 480px) {
+  //  flex: 1 1 45%;
+  //}
+}
+
+.name {
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+
+.overlay {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: $overlay;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  & + img {
+    width: 3.25em;
+    height: 2.7em;
+  }
+}
+
+.fileInput {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}

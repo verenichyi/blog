@@ -1,0 +1,73 @@
+@import 'src/view/components/App/colors';
+@import 'src/view/components/App/constants';
+
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0.8em 1.2em;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.875em;
+  line-height: 1.35em;
+  background-color: $white;
+  border: 1px solid $white-dirty;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border: 1px solid $primary-yellow;
+  }
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  transition: all 0.3s ease;
+
+  &.active {
+    transform: rotate(180deg);
+  }
+}
+
+.options {
+  text-align: left;
+  position: absolute;
+  width: 100%;
+  bottom: 110%;
+  left: 0;
+  border-radius: 4px;
+  background-color: $white;
+  overflow-y: scroll;
+  max-height: 20vh;
+  border: 1px solid $white-dirty;
+
+  &:hover {
+    border: 1px solid $primary-yellow;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.option {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 0.8em 1.2em;
+  border-radius: 4px;
+  font-size: 0.875em;
+  line-height: 1.35em;
+
+  &:hover {
+    background-color: $grey-light;
+  }
+}

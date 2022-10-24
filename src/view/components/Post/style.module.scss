@@ -1,0 +1,94 @@
+@import 'src/view/components/App/colors';
+@import 'src/view/components/App/constants';
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  background-color: $white;
+  border-radius: 50px 10px 10px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: $hoverShadow;
+  }
+}
+
+.postWrapper {
+  display: flex;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+.postImage {
+  width: 18em;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50px 10px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 70%;
+  padding: 1.5em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.title {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.author,
+.description,
+.likes,
+.comments {
+  font-size: 0.875em;
+  line-height: 1.4em;
+}
+
+.description {
+  flex: 1 1 auto;
+  margin-bottom: 1em;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.likeIcon,
+.commentIcon {
+  width: 1.2em;
+  height: 1em;
+  fill: $white-dirty;
+  transition: all 0.2s ease;
+}
+
+.detail:hover .likeIcon {
+  fill: $primary-yellow;
+}

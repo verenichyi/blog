@@ -1,0 +1,15 @@
+@import 'src/view/components/App/constants';
+@import 'src/view/components/App/colors';
+
+.header {
+  background-color: $white;
+  padding: 1em 0;
+  box-shadow: $shadow;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

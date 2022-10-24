@@ -1,0 +1,52 @@
+@import 'fonts';
+@import 'colors';
+@import 'normalize.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Nunito', sans-serif;
+  background-color: $grey-light;
+  color: $main;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus,
+input:focus-visible,
+button:focus,
+button:focus-visible,
+textarea:focus,
+textarea:focus-visible {
+  outline: none;
+}
+
+ul li {
+  list-style: none;
+}

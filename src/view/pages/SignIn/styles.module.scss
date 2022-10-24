@@ -1,0 +1,13 @@
+@import 'src/view/components/App/colors';
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.link {
+  color: $primary-yellow;
+}

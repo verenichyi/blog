@@ -1,0 +1,38 @@
+@import 'src/view/components/App/colors';
+@import 'src/view/components/App/constants';
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  gap: 2.5em;
+
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6em;
+  }
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  font-weight: 600;
+  margin-bottom: 2.5em;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+
+  @media screen and (max-width: 968px) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.content {
+  flex: 1 1 70%;
+}

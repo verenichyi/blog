@@ -1,0 +1,36 @@
+@import 'src/view/components/App/colors';
+
+.comment {
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-start;
+  position: relative;
+}
+
+.authorPhoto {
+  flex: 0 0 10%;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.date {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}

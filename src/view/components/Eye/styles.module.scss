@@ -1,0 +1,16 @@
+@import 'src/view/components/App/colors';
+
+.eye {
+  cursor: pointer;
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  right: 1em;
+  top: 2.5em;
+  fill: $white-dirty;
+  transition: all 0.2s ease;
+
+  &:hover {
+    fill: $primary-yellow;
+  }
+}
