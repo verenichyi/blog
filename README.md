@@ -1,9 +1,5 @@
-# Blog
+## Simple blog app that allows you to publish posts, leave comments, search and filter other users posts with.
 
-### `npm run start`
+Techstack: react, redux-toolkit, react-hook-form, react-spring, redux-persist, webpack
 
-Runs the app
-
-### `npm run test`
-
-Launches the test runner
+# https://verenichyi-blog.netlify.app/
